@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <!-- <div class="container"> -->
+
+            <div class="header">
+                <form class="city-input">
+                    <input type="text" class="city-input__input" placeholder="Город" value="Омск" required>
+                    <ul class="city-input__dropdown">
+
+                    </ul>
+                    <button type='submit' class="city-input__btn">OK</button>
+                </form>
+
+                <div class="degree-switcher">
+                    <span class="degree-switcher__icon">&deg;</span>
+                    <div class="switch-field">
+                        <input type="radio" id="radio-one" name="switch-one" value="C" checked disabled/>
+                        <label for="radio-one">C</label>
+                        <input type="radio" id="radio-two" name="switch-one" value="F"  />
+                        <label for="radio-two">F</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="degree">
+                <div class="degree-wrapper">
+                    <img alt="" class="degree__img w_icon">
+                    <h1 class="degree__num"><span class="degree__num_deg">19</span>&deg;</h1>
+                </div>
+                <p class="degree__description">Солнечно</p>
+            </div>
+
+            <div class="weather-statistics">
+                <div class="weather-statistics__item">
+                    <h2 class="weather-statistics__title">Ветер</h2>
+                    <p class="weather-statistics__subtitle weather-statistics__subtitle_wind">5 мс, западный</p>
+                </div>
+
+                <div class="weather-statistics__item">
+                    <h2 class="weather-statistics__title">Давление</h2>
+                    <p class="weather-statistics__subtitle weather-statistics__subtitle_pressure">750 мм. рт. ст.</p>
+                </div>
+                
+                <div class="weather-statistics__item">
+                    <h2 class="weather-statistics__title">Влажность</h2>
+                    <p class="weather-statistics__subtitle weather-statistics__subtitle_humidity">60%</p>
+                </div>
+
+                <div class="weather-statistics__item">
+                    <h2 class="weather-statistics__title">Вероятность дождя</h2>
+                    <p class="weather-statistics__subtitle weather-statistics__subtitle_rain-prob">10%</p>
+                </div>
+            <!-- </div> -->
+        </div>
+    </main>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
