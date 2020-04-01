@@ -48,6 +48,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 450px;
 }
 
 .header{
